@@ -20,5 +20,93 @@
         </ul>
       </nav>
     </header>
+
+    <aside>
+      <form role="search" action="#" method="get">
+        <fieldset>
+          <legend>Search Projects</legend>
+          <label for="project-search">Search:</label>
+          <input type="search" id="project-search" name="q" list="project-list" placeholder="Search projects...">
+          <datalist id="project-list">
+            <option value="UCSD Wrestling Club">
+            <option value="TDEE Calculator">
+            <option value="Plant">
+          </datalist>
+          <button type="submit">Search</button>
+        </fieldset>
+      </form>
+
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Filter by Category</legend>
+          <label for="category">Category:</label>
+          <select id="category" name="category">
+            <optgroup label="Clubs">
+              <option value="wrestling">UCSD Wrestling Club</option>
+            </optgroup>
+            <optgroup label="Tools">
+              <option value="tdee">TDEE Calculator</option>
+            </optgroup>
+            <optgroup label="platforms">
+              <option value="plant">Plant</option>
+            </optgroup>
+          </select>
+        </fieldset>
+      </form>
+
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Send Feedback</legend>
+          <label for="feedback-name">Name:</label>
+          <input type="text" id="feedback-name" name="name"><br><br>
+          <label for="feedback-msg">Message:</label>
+          <textarea id="feedback-msg" name="message" rows="3" cols="30" placeholder="Your feedback..."></textarea><br><br>
+          <button type="submit">Submit</button>
+        </fieldset>
+      </form>
+    </aside>
+
+    <main>
+      <h1>Personal Projects</h1>
+      <ol>
+        <li>
+          <a href="/placeholder.html" title="UCSD Wrestling Club Official Site">UCSD Wrestling Club</a>
+          <progress value="50" max="100">50%</progress>
+        </li>
+        <li>
+          <a href="/placeholder.html" title="TDEE Calculator">TDEE Calculator</a>
+        </li>
+        <li>
+          <a href="https://the-aces.dev/" title="Plant - a self development platform for self driven people to help them organize and reflect on their goal progress! - Created with a team for the software engineering course CSE 110 at UCSD">Plant</a>
+        </li>
+      </ol>
+
+      <section>
+        <h2>Plant Tagline</h2>
+        <p><em>“a self development platform for self driven people to help them organize and reflect on their goal progress!”</em> - Created with a team for the software engineering course <abbr title="Computer Science and Engineering 110">CSE 110</abbr> at UCSD</p>
+      </section>
+
+      <figure>
+        <svg width="100" height="50" role="img" aria-label="Placeholder icon">
+          <circle cx="50" cy="25" r="20"></circle>
+        </svg>
+        <figcaption>Project Icon Placeholder</figcaption>
+      </figure>
+
+      <audio controls>
+        <source src="#" type="audio/mpeg">
+      </audio>
+
+      <template id="project-card">
+        <article>
+          <h2><span class="project-name"></span></h2>
+          <p><span class="project-description"></span></p>
+        </article>
+      </template>
+    </main>
+
+    <div>
+      <p>Use <kbd>Tab</kbd> to navigate between links.</p>
+    </div>
   </body>
 </html>

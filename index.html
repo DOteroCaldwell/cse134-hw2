@@ -37,8 +37,8 @@
     </header>
 
     <picture>
-      <source media="(width >= 480px)" srcset="assest/personal-medium.jpeg">
-      <img src="assest/personal-small.jpeg" alt="Photo of Diego in New Orleans">
+      <source media="(width >= 480px)" srcset="/assest/personal-medium.jpeg">
+      <img src="/assests/personal-small.jpeg" alt="Photo of Diego in New Orleans">
     </picture>
 
     <section>
@@ -121,8 +121,25 @@ research methods, Large Language Model auditing</p>
     </section>
     <br>
     <button>Download Resume (PDF)</button>
+    <noscript>
+      <p>This site works best with JavaScript enabled.</p>
+    </noscript>
   </body>
+  
   <footer>
+    <h2>Contact Me</h2>
+    <form action="#" method="post">
+      <label for="name">Name:</label><br>
+      <input id="name" name="name" type="text" placeholder="Your Name"><br><br>
+      
+      <label for="email">Email:</label><br>
+      <input id="email" name="email" type="email" placeholder="your@email.com"><br><br>
+      
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="4" cols="40" placeholder="Write your message..."></textarea><br><br>
+      
+      <button type="submit">Send</button>
+    </form>
 
     <hello-world></hello-world>
   </footer>
